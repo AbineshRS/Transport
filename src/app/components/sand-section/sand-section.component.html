@@ -1,0 +1,17 @@
+<section id="products" class="sand-section products-section" aria-labelledby="sand-heading">
+  <div class="container" appAnimateIn>
+    <h2 id="sand-heading" class="section-title">We Supply – Bricks, M Sand, P Sand &amp; Blue Metal</h2>
+    <p class="section-intro">Transport and supply of <strong>red bricks</strong>, <strong>M sand</strong>, <strong>P sand</strong> and <strong>blue metal</strong> for your construction. Premium quality, on-time delivery.</p>
+    <div class="sand-grid">
+      @for (p of products; track p.id) {
+        <article class="sand-card">
+          <div class="sand-image-wrap">
+            <img [src]="p.image" [alt]="p.alt" class="sand-image" loading="lazy" (error)="$any($event.target).style.display='none'" />
+          </div>
+          <h3 class="sand-name">{{ p.name }} <span class="sand-full">({{ p.fullName }})</span></h3>
+          <p class="sand-desc">{{ p.description }}</p>
+        </article>
+      }
+    </div>
+  </div>
+</section>

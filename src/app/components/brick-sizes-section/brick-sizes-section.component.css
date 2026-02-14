@@ -1,0 +1,89 @@
+.brick-sizes {
+  padding: var(--space-section) 2rem;
+  background: var(--color-cream);
+  color: var(--color-dark);
+}
+
+.brick-sizes .section-title {
+  font-size: clamp(1.75rem, 3.5vw, 2.25rem);
+}
+
+.brick-sizes .section-intro {
+  margin-bottom: 2rem;
+}
+
+.brick-sizes .section-intro a {
+  color: var(--color-accent);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.brick-sizes .section-intro a:hover {
+  text-decoration: underline;
+}
+
+.sizes-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.size-card {
+  background: var(--color-white);
+  border: 1px solid rgba(26, 22, 20, 0.08);
+  border-radius: var(--radius-md);
+  padding: 1.25rem;
+  box-shadow: var(--shadow-soft);
+  transition: box-shadow var(--transition), border-color var(--transition);
+}
+
+.size-card:hover {
+  box-shadow: var(--shadow-card);
+  border-color: rgba(201, 162, 39, 0.25);
+}
+
+.size-main {
+  display: block;
+  font-family: var(--font-heading);
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: var(--color-dark);
+  margin-bottom: 0.25rem;
+}
+
+.size-mm {
+  display: block;
+  font-size: 0.8125rem;
+  color: var(--color-dark-muted);
+  margin-bottom: 0.5rem;
+}
+
+.size-name {
+  font-size: 0.875rem;
+  color: var(--color-dark-muted);
+}
+
+.sizes-note {
+  font-size: 0.9375rem;
+  color: var(--color-dark-muted);
+  margin: 0;
+  text-align: center;
+  max-width: 560px;
+  margin-inline: auto;
+  line-height: 1.6;
+}
+
+.container .section-title,
+.container .section-intro,
+.container .sizes-grid,
+.container .sizes-note {
+  opacity: 0;
+  transform: translateY(12px);
+  transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+}
+
+.container.is-visible .section-title { opacity: 1; transform: translateY(0); transition-delay: 0s; }
+.container.is-visible .section-intro { opacity: 1; transform: translateY(0); transition-delay: 0.08s; }
+.container.is-visible .sizes-grid { opacity: 1; transform: translateY(0); transition-delay: 0.16s; }
+.container.is-visible .sizes-note { opacity: 1; transform: translateY(0); transition-delay: 0.24s; }

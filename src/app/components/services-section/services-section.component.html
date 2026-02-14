@@ -1,0 +1,15 @@
+<section id="services" class="services" aria-labelledby="services-heading">
+  <div class="container" appAnimateIn>
+    <h2 id="services-heading" class="section-title">Transport Services</h2>
+    <p class="section-intro">We offer end-to-end <strong>transport</strong> of bricks, M sand, P sand and blue metal for builders, contractors and developers. From kiln and supplier to site across Tamil Nadu, Kerala, Karnataka and Andhra Pradesh.</p>
+    <div class="services-grid">
+      @for (s of services; track s.title) {
+        <article class="service-card">
+          <span class="service-icon" aria-hidden="true">{{ s.icon }}</span>
+          <h3 class="service-title">{{ s.title }}</h3>
+          <p class="service-desc">{{ s.description }}</p>
+        </article>
+      }
+    </div>
+  </div>
+</section>

@@ -1,0 +1,78 @@
+/* ===== Bricks Transport – Premium global styles ===== */
+
+:root {
+  /* Premium palette: deep charcoal, warm ivory, brass/gold accent */
+  --color-dark: #1a1614;
+  --color-dark-muted: #4a423c;
+  --color-brick: #9c4a32;
+  --color-brick-dark: #3d251e;
+  --color-accent: #c9a227;
+  --color-accent-soft: rgba(201, 162, 39, 0.15);
+  --color-cream: #faf6f1;
+  --color-cream-muted: #b8a99a;
+  --color-white: #ffffff;
+  --font-heading: 'Cormorant Garamond', Georgia, 'Times New Roman', serif;
+  --font-body: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --space-section: 6rem;
+  --space-block: 2rem;
+  --radius-sm: 6px;
+  --radius-md: 12px;
+  --radius-lg: 20px;
+  --shadow-soft: 0 4px 24px rgba(26, 22, 20, 0.06);
+  --shadow-card: 0 8px 40px rgba(26, 22, 20, 0.08);
+  --shadow-card-hover: 0 20px 56px rgba(26, 22, 20, 0.12);
+  --transition: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-body);
+  font-size: 17px;
+  line-height: 1.6;
+  color: var(--color-dark);
+  background: var(--color-cream);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+  margin: 0;
+  letter-spacing: -0.01em;
+}
+
+a {
+  color: inherit;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.skip-link {
+  position: absolute;
+  top: -3rem;
+  left: 0.5rem;
+  padding: 0.5rem 1rem;
+  background: var(--color-accent);
+  color: var(--color-dark);
+  text-decoration: none;
+  font-weight: 600;
+  z-index: 9999;
+  transition: top 0.2s;
+}
+
+.skip-link:focus {
+  top: 0.5rem;
+}

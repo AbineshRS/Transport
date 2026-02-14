@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+# Replace with your real domain after going live, e.g.:
+# Sitemap: https://brickstransport.com/sitemap.xml

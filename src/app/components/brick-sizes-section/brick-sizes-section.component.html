@@ -1,0 +1,18 @@
+<section id="brick-sizes" class="brick-sizes" aria-labelledby="sizes-heading">
+  <div class="container" appAnimateIn>
+    <h2 id="sizes-heading" class="section-title">Wire-Cut Brick Sizes We Transport</h2>
+    <p class="section-intro">We deliver the standard wire-cut and red brick sizes supplied across Chennai and Tamil Nadu. Sizes as per common specifications from <a href="https://dir.indiamart.com/chennai/wire-cut-brick.html" target="_blank" rel="noopener noreferrer">wire-cut brick suppliers in Chennai</a>.</p>
+    <div class="sizes-grid">
+      @for (s of sizes; track s.inches) {
+        <div class="size-card">
+          <span class="size-main">{{ s.inches }}</span>
+          @if (s.mm && s.mm !== '–') {
+            <span class="size-mm">{{ s.mm }}</span>
+          }
+          <span class="size-name">{{ s.name }}</span>
+        </div>
+      }
+    </div>
+    <p class="sizes-note">Need a different size? Tell us your requirement – we arrange transport for all standard and custom wire-cut brick orders.</p>
+  </div>
+</section>

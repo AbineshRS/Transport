@@ -1,0 +1,19 @@
+<header class="header">
+  <div class="header-inner">
+    <a routerLink="/" class="logo">
+      <span class="logo-icon">🧱</span>
+      <span class="logo-text">Transport</span>
+    </a>
+    <button class="menu-toggle" (click)="toggleMenu()" [attr.aria-expanded]="isMenuOpen" aria-label="Toggle menu">
+      <span class="hamburger"></span>
+      <span class="hamburger"></span>
+      <span class="hamburger"></span>
+    </button>
+    <nav class="nav" [class.open]="isMenuOpen">
+      @for (link of navLinks; track link.label) {
+        <a [routerLink]="link.path" [fragment]="link.fragment" routerLinkActive="active"
+           [routerLinkActiveOptions]="{ exact: !link.fragment }" (click)="isMenuOpen = false" class="nav-link">{{ link.label }}</a>
+      }
+    </nav>
+  </div>
+</header>
