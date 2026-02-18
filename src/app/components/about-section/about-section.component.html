@@ -2,27 +2,23 @@
   <div class="container about-grid">
     <div class="about-images" appAnimateIn>
       <div class="about-image-wrap about-image-premium">
-        <img src="/images/brick-clear-1.jpg" alt="Wire-cut brick clear finish – red clay 9×4×3 in." class="about-image" loading="lazy" (error)="$any($event.target).style.display='none'" />
+        <img src="/images/brick-clear-1.jpg" alt="Wire-cut brick clear finish – red clay 9×4×3 in." class="about-image" loading="eager" decoding="async" fetchpriority="high" (error)="onImageError($event)" />
         <div class="about-image-overlay"></div>
-        <p class="about-img-placeholder">Wire cut / red bricks</p>
       </div>
       <div class="about-image-wrap about-image-premium">
-        <img src="/images/brick-clear-2.jpg" alt="Stacked red bricks clear finish – Tamil Nadu quality" class="about-image" loading="lazy" (error)="$any($event.target).style.display='none'" />
+        <img src="/images/brick-clear-2.jpg" alt="Stacked red bricks clear finish – Tamil Nadu quality" class="about-image" loading="eager" decoding="async" fetchpriority="high" (error)="onImageError($event)" />
         <div class="about-image-overlay"></div>
-        <p class="about-img-placeholder">Tamil Nadu bricks</p>
       </div>
       <div class="about-image-wrap about-image-premium">
-        <img src="/images/brick-clear-3.jpg" alt="Red clay bricks clear finish – Chennai supply" class="about-image" loading="lazy" (error)="$any($event.target).style.display='none'" />
+        <img src="/images/brick-clear-3.jpg" alt="Red clay bricks clear finish – Chennai supply" class="about-image" loading="eager" decoding="async" fetchpriority="high" (error)="onImageError($event)" />
         <div class="about-image-overlay"></div>
-        <p class="about-img-placeholder">Brick stacks</p>
       </div>
       <div class="about-image-wrap about-image-premium">
-        <img src="/images/brick-premium-2.jpg" alt="Premium red bricks – Tamil Nadu quality" class="about-image" loading="lazy" (error)="$any($event.target).style.display='none'" />
+        <img src="/images/brick-premium-2.jpg" alt="Premium red bricks – Tamil Nadu quality" class="about-image" loading="eager" decoding="async" fetchpriority="high" (error)="onImageError($event)" />
         <div class="about-image-overlay"></div>
-        <p class="about-img-placeholder">Premium bricks</p>
       </div>
     </div>
-    <div class="about-content" appAnimateIn>
+    <div class="about-content">
       <h2 id="about-heading" class="section-title">Why Transport from Tamil Nadu &amp; Kerala?</h2>
       <p class="about-lead">
         <strong>Transport</strong> of bricks, M sand, P sand and blue metal from Tamil Nadu and Kerala: these states produce high-quality red bricks and <strong>wire-cut bricks</strong> (clay bricks, 9×4×3 in. and other sizes). We specialise in moving materials from kilns and suppliers to your construction site.

@@ -1,0 +1,42 @@
+<section id="seo-analysis" class="seo-analysis" aria-labelledby="seo-analysis-heading">
+  <div class="container" appAnimateIn>
+    <div class="seo-head">
+      <p class="seo-kicker">SEO Analysis Data</p>
+      <h2 id="seo-analysis-heading" class="section-title">Ranking Plan for "Bricks" and "Transport"</h2>
+      <p class="section-intro">
+        This section shows your SEO base strength and the exact action plan required to rank higher for
+        <strong>brick transport</strong>, <strong>bricks delivery</strong> and related local search terms.
+      </p>
+    </div>
+
+    <div class="score-grid">
+      @for (item of scoreCards; track item.label) {
+        <article class="score-card">
+          <p class="score-value">{{ item.value }}</p>
+          <h3>{{ item.label }}</h3>
+          <p>{{ item.note }}</p>
+        </article>
+      }
+    </div>
+
+    <div class="seo-columns">
+      <article class="seo-panel">
+        <h3>Target Keyword Cluster</h3>
+        <div class="keyword-wrap">
+          @for (keyword of keywordGroups; track keyword) {
+            <span class="keyword-chip">{{ keyword }}</span>
+          }
+        </div>
+      </article>
+
+      <article class="seo-panel">
+        <h3>Action Steps to Rank Better</h3>
+        <ol class="seo-list">
+          @for (step of actionSteps; track step) {
+            <li>{{ step }}</li>
+          }
+        </ol>
+      </article>
+    </div>
+  </div>
+</section>

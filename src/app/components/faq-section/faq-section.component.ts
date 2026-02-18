@@ -29,6 +29,26 @@ export class FaqSectionComponent {
     {
       q: 'Why choose Bricks Transport for red brick logistics?',
       a: 'We focus only on bricks transport: direct kiln links, safe handling, on-time delivery, and clear pricing. Ideal for builders, contractors, and developers who need reliable brick supply.'
+    },
+    {
+      q: 'Do you provide full-load and part-load transport?',
+      a: 'Yes. We provide both full-load and part-load transport based on your site requirement. This helps small and large projects control cost while getting timely delivery.'
+    },
+    {
+      q: 'Can you transport M sand, P sand and blue metal with bricks?',
+      a: 'Yes, we transport bricks, M sand, P sand and blue metal. You can book one material or combine loads based on route and vehicle availability.'
+    },
+    {
+      q: 'How quickly can you dispatch after booking confirmation?',
+      a: 'Dispatch timing depends on pickup location, load readiness and route demand. In most cases we provide a quick schedule update after booking confirmation.'
+    },
+    {
+      q: 'Which cities do you commonly deliver to?',
+      a: 'Common delivery routes include Chennai, Coimbatore, Madurai, Trichy, Bangalore, Kochi and nearby regions across South India.'
+    },
+    {
+      q: 'How do you reduce brick damage during transport?',
+      a: 'We follow controlled stacking, careful loading and route-aware handling practices. This helps reduce breakage risk and improve delivery quality at site.'
     }
   ];
   openIndex: number | null = null;

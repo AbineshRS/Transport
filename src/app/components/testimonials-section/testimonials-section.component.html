@@ -1,0 +1,18 @@
+<section id="testimonials" class="testimonials" aria-labelledby="testimonials-heading">
+  <div class="container" appAnimateIn>
+    <h2 id="testimonials-heading" class="section-title">Client Trust and Delivery Experience</h2>
+    <p class="section-intro">
+      Real feedback from project teams using our <strong>bricks transport</strong> and material delivery support.
+    </p>
+
+    <div class="review-grid">
+      @for (item of testimonials; track item.author) {
+        <article class="review-card">
+          <p class="stars" aria-hidden="true">★★★★★</p>
+          <p class="quote">{{ item.quote }}</p>
+          <p class="author">{{ item.author }}</p>
+        </article>
+      }
+    </div>
+  </div>
+</section>

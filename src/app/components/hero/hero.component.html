@@ -1,16 +1,37 @@
 <section class="hero" aria-label="Welcome">
   <div class="hero-bg">
-    <img src="/images/hero-bricks-only.jpg" alt="Red bricks – Tamil Nadu brick industry transport" class="hero-bg-img" (error)="$any($event.target).style.display='none'" />
+    <img [src]="heroBgSrc" alt="Red bricks – transport industry" class="hero-bg-img" loading="eager" fetchpriority="high" decoding="async" (error)="onHeroImageError($event)" />
   </div>
   <div class="hero-overlay"></div>
+  <div class="hero-spot hero-spot-left" aria-hidden="true"></div>
+  <div class="hero-spot hero-spot-right" aria-hidden="true"></div>
   <div class="hero-content">
-    <p class="hero-label animate-fade-in">Transport – Tamil Nadu &amp; Kerala to South India</p>
+    <p class="hero-label animate-fade-in">Premium Fleet Network | Tamil Nadu &amp; Kerala</p>
     <h1 class="hero-title animate-slide-up">Transport – Red Bricks, M Sand, P Sand &amp; Blue Metal</h1>
     <div class="hero-line animate-scale-in" aria-hidden="true"></div>
     <p class="hero-subtitle animate-fade-in animate-delay-1">We specialise in <strong>transport</strong>: wire-cut and red clay bricks, M sand, P sand and blue metal from kilns and suppliers to your site. Full or part load—on-time delivery across Tamil Nadu, Kerala, Karnataka and Andhra Pradesh.</p>
+    <div class="hero-trust animate-fade-in animate-delay-1">
+      <span class="trust-chip">On-time dispatch</span>
+      <span class="trust-chip">Minimal breakage handling</span>
+      <span class="trust-chip">Pan-South India routing</span>
+    </div>
     <div class="hero-cta animate-fade-in animate-delay-2">
       <a routerLink="/" fragment="contact" class="btn btn-primary">Request a Quote</a>
       <a href="tel:+919876543210" class="btn btn-secondary">Call Now</a>
+    </div>
+    <div class="hero-stats animate-fade-in animate-delay-2">
+      <div class="stat-item">
+        <p class="stat-value">24/7</p>
+        <p class="stat-label">Support for dispatch updates</p>
+      </div>
+      <div class="stat-item">
+        <p class="stat-value">4 States</p>
+        <p class="stat-label">Tamil Nadu, Kerala, Karnataka, AP</p>
+      </div>
+      <div class="stat-item">
+        <p class="stat-value">Bulk + Part</p>
+        <p class="stat-label">Flexible load planning for projects</p>
+      </div>
     </div>
   </div>
 </section>

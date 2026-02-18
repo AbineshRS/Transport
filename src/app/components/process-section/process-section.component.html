@@ -1,0 +1,19 @@
+<section id="process" class="process" aria-labelledby="process-heading">
+  <div class="container" appAnimateIn>
+    <h2 id="process-heading" class="section-title">How Our Transport Process Works</h2>
+    <p class="section-intro">
+      Premium and reliable flow for <strong>bricks transport</strong> and construction material delivery from
+      Tamil Nadu and Kerala across South India.
+    </p>
+
+    <div class="timeline">
+      @for (step of steps; track step.title; let i = $index) {
+        <article class="step-card">
+          <span class="step-no">0{{ i + 1 }}</span>
+          <h3>{{ step.title }}</h3>
+          <p>{{ step.description }}</p>
+        </article>
+      }
+    </div>
+  </div>
+</section>

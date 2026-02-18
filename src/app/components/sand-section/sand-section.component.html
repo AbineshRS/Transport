@@ -6,7 +6,7 @@
       @for (p of products; track p.id) {
         <article class="sand-card">
           <div class="sand-image-wrap">
-            <img [src]="p.image" [alt]="p.alt" class="sand-image" loading="lazy" (error)="$any($event.target).style.display='none'" />
+            <img [src]="p.image" [alt]="p.alt" class="sand-image" loading="lazy" decoding="async" fetchpriority="low" (error)="$any($event.target).style.display='none'" />
           </div>
           <h3 class="sand-name">{{ p.name }} <span class="sand-full">({{ p.fullName }})</span></h3>
           <p class="sand-desc">{{ p.description }}</p>
